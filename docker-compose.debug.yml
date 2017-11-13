@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  istex-kibana-elastic:
+    container_name: istex-kibana-elastic
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.4.2
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      CLUSTER_NAME: "istex-kibana"
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - istex-kibana-network      
+    volumes:
+      - "./data/elastic/data:/usr/share/elasticsearch/data"
+      - "./istex-kibana-elastic/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+      #- "./istex-kibana-elastic/config/log4j2.properties:/usr/share/elasticsearch/config/log4j2.properties"
+    restart: unless-stopped
+
+  istex-kibana-kibana:
+    container_name: istex-kibana-kibana
+    image: docker.elastic.co/kibana/kibana:5.4.2
+    ports:
+      - 5601:5601
+    links:
+      - istex-kibana-elastic
+    environment:
+      - ELASTICSEARCH_URL="http://istex-kibana-elastic:9200"
+    networks:
+      - istex-kibana-network      
+    volumes:
+      - ./istex-kibana-kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
+    restart: unless-stopped
+
+networks:
+  istex-kibana-network:
+    driver: bridge
