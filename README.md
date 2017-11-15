@@ -26,6 +26,8 @@ Ces même données sont également accessible programatiquement sur l'[API ISTEX
 make run-debug
 ```
 
+Rendez vous ensuite sur http://localhost:5601/ (attendez un petit moment au premier lancement pour qu'elasticsearch et kibana s'initialisent)
+
 Ensuite vous devez importez manuellement le modèle de tableau de bord Kibana en vous rendant dans ![Management](https://user-images.githubusercontent.com/328244/32851436-3a80c0fa-ca35-11e7-8744-bc7ec552aa0c.png) puis en cliquant sur ![Import](https://user-images.githubusercontent.com/328244/32851531-778dd172-ca35-11e7-8fa7-b7ca0c8bc7d9.png) et finalement en sélectionnant le fichier export.json présent dans le répertoire ``data/kibana/export.json`` :
 ![](https://user-images.githubusercontent.com/328244/32851512-69f484fc-ca35-11e7-91a2-4881022c37fc.png)
 Cette opération est à faire une seule fois après le premier lancement de l'application.
