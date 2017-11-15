@@ -18,6 +18,7 @@ Ces même données sont également accessible programatiquement sur l'[API ISTEX
 
 - [Docker](https://docs.docker.com/engine/installation/) (Version ⩾ 17.09.0)
 - [Docker Compose](https://docs.docker.com/compose/install/) (Version ⩾ 1.17.0)
+- vm.max_map_count ⩾ 262144 ([see elasticsearch doc](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode))
 
 ## Lancer l'application
 
