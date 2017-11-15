@@ -3,6 +3,7 @@ network.host: 0.0.0.0
 script.inline: true
 xpack.monitoring.enabled: false
 xpack.security.enabled: false
+discovery.type: single-node
 path.logs: /usr/share/elasticsearch/logs
 
 # to remove the [F3YLXD3] rerouting shards: [high disk watermark exceeded on one or more nodes]
