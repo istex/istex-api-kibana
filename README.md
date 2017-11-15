@@ -1,12 +1,14 @@
-# istex-kibana
+# istex-api-kibana
 
-[![trello board](https://user-images.githubusercontent.com/328244/32807531-72d5f4ca-c990-11e7-961e-8e06d34e2ef7.png)](https://trello.com/b/BBKDj5Dd/istex-kibana)
+[![trello board](https://user-images.githubusercontent.com/328244/32807531-72d5f4ca-c990-11e7-961e-8e06d34e2ef7.png)](https://trello.com/b/BBKDj5Dd/istex-api-kibana)
 
-Dashboard kibana des données de la plateforme ISTEX.
+Dashboard kibana des données disponibles en production sur la plateforme ISTEX: https://api-kibana.istex.fr (prochainement disponible)
 
 Pour :
 - proposer une vitrine orientée données aux utilisateurs finaux,
 - permettre de visuellement naviguer dans les données de la plateforme ISTEX pour des besoins internes de compréhension et de diagnostiques afin de mieux cibler les chantiers de curration et d'amélioration des données.
+
+Ces même données sont également accessible programatiquement sur l'[API ISTEX](https://api.istex.fr).
 
 ![anim](https://user-images.githubusercontent.com/328244/32807575-9651c5c8-c990-11e7-9610-4cbb19dd6734.gif)
 

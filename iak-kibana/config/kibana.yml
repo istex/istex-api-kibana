@@ -1,5 +1,5 @@
 server.port: 5601
-server.name: kibana
+server.name: iak-kibana
 server.host: "0.0.0.0"
 elasticsearch.url: ${ELASTICSEARCH_URL}
 
