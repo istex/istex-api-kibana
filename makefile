@@ -11,7 +11,7 @@ build: ## build localy docker images needed by istex-kibana
 	docker-compose -f ./docker-compose.debug.yml build
 
 check-sysctl:
-	@if [ "$$(/sbin/sysctl -n vm.max_map_count)" -lt "262145" ]; then echo "${RED}You have to set vm.max_map_count greater than 262144 or elasticsearch will not start${NC}"; echo "${RED}see: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode${NC}"; exit 1; fi
+	@if [ "$$(/sbin/sysctl -n vm.max_map_count)" -lt "262144" ]; then echo "${RED}You have to set vm.max_map_count greater than 262144 or elasticsearch will not start${NC}"; echo "${RED}see: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode${NC}"; exit 1; fi
 
 run-prod: check-sysctl ## run istex-kibana with prod parameters
 	docker-compose up -d rp
