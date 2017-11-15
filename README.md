@@ -2,7 +2,8 @@
 
 [![trello board](https://user-images.githubusercontent.com/328244/32807531-72d5f4ca-c990-11e7-961e-8e06d34e2ef7.png)](https://trello.com/b/BBKDj5Dd/istex-api-kibana)
 
-Dashboard kibana des données disponibles en production sur la plateforme ISTEX: https://api-kibana.istex.fr (prochainement disponible)
+Dashboard kibana des données disponibles en production sur la plateforme ISTEX:
+https://api-kibana.istex.fr (prochainement disponible)
 
 Pour :
 - proposer une vitrine orientée données aux utilisateurs finaux,
