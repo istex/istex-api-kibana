@@ -9,7 +9,7 @@ Pour :
 - proposer une vitrine orientée données aux utilisateurs finaux,
 - permettre de visuellement naviguer dans les données de la plateforme ISTEX pour des besoins internes de compréhension et de diagnostiques afin de mieux cibler les chantiers de curration et d'amélioration des données.
 
-Ces même données sont également accessible programatiquement sur l'[API ISTEX](https://api.istex.fr).
+Ces même données sont également accessibles programatiquement à travers l'[API ISTEX](https://api.istex.fr).
 
 ![anim](https://user-images.githubusercontent.com/328244/32807575-9651c5c8-c990-11e7-9610-4cbb19dd6734.gif)
 
