@@ -19,6 +19,6 @@ run-prod: check-sysctl ## run istex-kibana with prod parameters
 run-debug: check-sysctl ## run istex-kibana with debug parameters
 	docker-compose -f ./docker-compose.debug.yml up
 
-load-istex-data: ## load 100 random istex documents in the elasticsearch
-	./load-100-random-istex-doc.sh
+load-istex-data: ## load random istex documents in the elasticsearch
+	./load-random-istex-doc.sh
 

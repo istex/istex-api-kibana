@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for DOC_IDX in $(seq 1 100)
+for DOC_IDX in $(seq 1 100000)
 do
   ISTEX_JSON_DOC=$(curl -s "https://api.istex.fr/document/?q=*&output=*&rankBy=random&size=1&sid=istex-kibana" | jq '.hits[0]')
   ISTEX_ID=$(echo $ISTEX_JSON_DOC | jq -r .id)
