@@ -1,14 +1,14 @@
 server.port: 5601
-server.name: iak-kibana
+server.name: ${CLUSTER_NAME}
 server.host: "0.0.0.0"
 elasticsearch.url: ${ELASTICSEARCH_URL}
 
 logging.dest: stdout
 logging.silent: false
 logging.quiet: false
-logging.verbose: true
+logging.verbose: false
 
-## Disable X-Pack
+## Disable X-Pack stuff
 ## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
 ##     https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html#xpack-enabling
 #
@@ -19,3 +19,11 @@ xpack.graph.enabled: false
 xpack.reporting.enabled: false
 xpack.grokdebugger.enabled: false
 
+console.enabled: false
+timelion.enabled: false
+
+# # https://www.elastic.co/guide/en/kibana/6.0/using-kibana-with-security.html
+# xpack.security.encryptionKey: "c286ad0dbdedd2c7ce515d72c2b02acc"
+# xpack.security.sessionTimeout: 600000
+# elasticsearch.password: ${ELASTIC_PASSWORD}
+# elasticsearch.username: ${ELASTIC_USERNAME}

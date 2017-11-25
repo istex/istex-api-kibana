@@ -1,10 +1,20 @@
 cluster.name: ${CLUSTER_NAME}
 network.host: 0.0.0.0
-xpack.monitoring.enabled: false
-xpack.security.enabled: false
 discovery.type: single-node
 path.logs: /usr/share/elasticsearch/logs
 
 # to remove the [F3YLXD3] rerouting shards: [high disk watermark exceeded on one or more nodes]
 # https://www.elastic.co/guide/en/elasticsearch/reference/2.1/disk-allocator.html
 cluster.routing.allocation.disk.threshold_enabled: false
+
+# X-Pack stuff
+xpack.monitoring.enabled: false
+xpack.security.enabled: false
+
+# https://www.elastic.co/guide/en/x-pack/6.0/anonymous-access.html
+# xpack.security.authc:
+#   anonymous:
+#     username: anonymous_user 
+#     roles: role1, role2 
+#     authz_exception: true
+#   accept_default_password: true
