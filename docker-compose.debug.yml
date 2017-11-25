@@ -8,7 +8,7 @@ services:
       - 9200:9200
       - 9300:9300
     environment:
-      CLUSTER_NAME: "istex-kibana"
+      CLUSTER_NAME: "istex-api-kibana"
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
       - iak-network      
@@ -26,7 +26,8 @@ services:
     links:
       - iak-elastic
     environment:
-      - ELASTICSEARCH_URL="http://iak-elastic:9200"
+      CLUSTER_NAME: "istex-api-kibana"
+      ELASTICSEARCH_URL: "http://iak-elastic:9200"
     networks:
       - iak-network      
     volumes:
