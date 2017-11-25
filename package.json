@@ -1,0 +1,19 @@
+{
+  "name": "istex-api-kibana",
+  "homepage": "https://api-kibana.istex.fr",
+  "version": "1.0.0",
+  "description": "Dashboard kibana des données disponibles en production sur la plateforme ISTEX",
+  "contributors": [
+    {
+      "name": "Stéphane Gully",
+      "url": "https://github.com/kerphi"
+    }
+  ],
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "insertversion:docker-compose": "sed -i \"s#\\(image: istex/istex-api-kibana:\\)\\([\\.a-z0-9]\\+\\)#\\1${npm_package_version}#g\" docker-compose.*yml",
+    "version": "npm run insertversion:docker-compose && git add docker-compose*.yml",
+    "postversion": "git push && git push --tags"
+  }
+}
