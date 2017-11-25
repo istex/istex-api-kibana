@@ -42,7 +42,7 @@ Rendez alors sur http://128.0.0.1:8080/app/kibana et si c'est votre premier lanc
 
 Une fois que vous arrivez à afficher Kibana sur votre URL locale http://128.0.0.1:8080/app/kibana vous avez plusieurs opérations à réaliser manuellement (qui ne seront pas à réaliser au prochain redémarrage).
 
-1) Configurer un "index pattern" au niveau du kibana, il faudra indiquer ``istex-corpus-*`` et ne pas séléctionner de champs pour le "Time filter" cf copie d'écran :
+1) Configurer un "index pattern" au niveau du kibana, il faudra indiquer ``istex-corpus-*`` et ne pas séléctionner de champs pour le "Time filter". Cf copie d'écran :
 
 ![image](https://user-images.githubusercontent.com/328244/33234970-a257d37e-d22f-11e7-95e6-6b2826956695.png)
 
