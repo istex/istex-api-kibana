@@ -17,7 +17,7 @@ services:
     environment:
       CLUSTER_NAME: "istex-api-kibana"
       ES_JAVA_OPTS: ${IAK_ELASTICSEARCH_JAVA_OPTS}
-      TAKE_FILE_OWNERSHIP: true # to be able to write into /usr/share/elasticsearch/data/
+      TAKE_FILE_OWNERSHIP: "1" # to be able to write into /usr/share/elasticsearch/data/
     networks:
       - iak-network      
     volumes:
