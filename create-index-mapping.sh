@@ -24,17 +24,6 @@ do
           },
           "copyrightDate": {
             "type": "date"
-          },
-          "namedEntities": {
-            "properties": {
-              "unitex": {
-                "properties": {
-                  "date": {
-                    "type": "date"
-                  }
-                }
-              }
-            }
           }          
         }
       }
