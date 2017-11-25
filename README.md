@@ -82,4 +82,12 @@ Cette commande va charger 1000 métadonnées de documents aléatoirement trouvé
 
 Si vous désirez d'enrichire les tableaux de bord d'istex-api-kibana faites le depuis l'interface Kibana, pensez alors à sauvegarder vos modifications (authentification nécessaire via ``IAK_ADMIN_USERNAME`` et ``IAK_ADMIN_PASSWORD``).
 
-La dernière étape pour que ce soit sauvegardé dans le github est de vous rendre alors dans ![Management](https://user-images.githubusercontent.com/328244/32851436-3a80c0fa-ca35-11e7-8744-bc7ec552aa0c.png), ensuite cliquez sur ![Export Everything](https://user-images.githubusercontent.com/328244/32851462-4db5756c-ca35-11e7-820a-4994188b117d.png) et sélectionnez l'emplacement ``data/kibana/export.json`` pour y sauvegarder le fichier ``export.json`` généré. N'oubliez pas ensuite de faire un ``git commit`` et un ``git push`` de ce fichier.
+La dernière étape pour que ce soit sauvegardé dans le github est de vous rendre alors dans
+
+![Management](https://user-images.githubusercontent.com/328244/32851436-3a80c0fa-ca35-11e7-8744-bc7ec552aa0c.png)
+
+ensuite cliquez sur
+
+![Export Everything](https://user-images.githubusercontent.com/328244/32851462-4db5756c-ca35-11e7-820a-4994188b117d.png)
+
+et sélectionnez l'emplacement ``data/kibana/export.json`` pour y sauvegarder le fichier ``export.json`` généré. N'oubliez pas ensuite de faire un ``git commit`` et un ``git push`` de ce fichier.
