@@ -1,7 +1,7 @@
 {
   "name": "istex-api-kibana",
   "homepage": "https://api-kibana.istex.fr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Dashboard kibana des données disponibles en production sur la plateforme ISTEX",
   "contributors": [
     {

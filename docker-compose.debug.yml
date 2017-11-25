@@ -10,7 +10,7 @@ services:
       args:
         - http_proxy
         - https_proxy
-    image: istex/istex-api-kibana:1.0.2-elastic
+    image: istex/istex-api-kibana:1.0.3-elastic
     ports:
       - 9200:9200
       - 9300:9300
@@ -35,7 +35,7 @@ services:
       args:
         - http_proxy
         - https_proxy
-    image: istex/istex-api-kibana:1.0.2-kibana
+    image: istex/istex-api-kibana:1.0.3-kibana
     ports:
       - 5601:5601
     links:
@@ -60,7 +60,7 @@ services:
       args:
         - http_proxy
         - https_proxy
-    image: istex/istex-api-kibana:1.0.2-rp
+    image: istex/istex-api-kibana:1.0.3-rp
     environment:
       IAK_BASEURL: ${IAK_BASEURL}
       IAK_ADMIN_USERNAME: ${IAK_ADMIN_USERNAME}
