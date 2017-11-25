@@ -17,8 +17,15 @@ run-prod: check-sysctl ## run istex-kibana with prod parameters
 	docker-compose up -d rp
 
 run-debug: check-sysctl ## run istex-kibana with debug parameters
+	google-chrome http://127.0.0.1:5601/ &
 	docker-compose -f ./docker-compose.debug.yml up
 
 load-istex-data: ## load random istex documents in the elasticsearch
 	./load-random-istex-doc.sh
 
+cleanup-data: ## destroy all the elasticsearch data the hard way
+	docker-compose -f ./docker-compose.debug.yml kill
+	rm -rf data/elastic/data/*
+
+change-password: ## modify elastic and kibana default password
+	docker exec -it iak-elastic bin/x-pack/setup-passwords interactive
