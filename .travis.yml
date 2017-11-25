@@ -17,7 +17,7 @@ before_install:
   # build and run istex-api-kibana as in prod
   - make build
   - docker-compose -f ./docker-compose.debug.yml up -d
-  - sleep 120 ; docker-compose ./docker-compose.debug.yml logs
+  - sleep 120 ; docker-compose -f ./docker-compose.debug.yml logs
 script:
   - docker-compose ps
   # just test there is 3 running containers, that is not a lot but that's already it!
