@@ -9,7 +9,7 @@ services:
       - 9300:9300
     environment:
       CLUSTER_NAME: "istex-api-kibana"
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: ${IAK_ELASTICSEARCH_JAVA_OPTS}
     networks:
       - iak-network      
     volumes:
@@ -32,6 +32,29 @@ services:
       - iak-network      
     volumes:
       - ./iak-kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
+    restart: unless-stopped
+
+  iak-rp:
+    container_name: iak-rp
+    build:
+      context: ./iak-rp
+      args:
+        - http_proxy
+        - https_proxy
+    image: iak-rp
+    environment:
+      IAK_BASEURL: ${IAK_BASEURL}
+      IAK_ADMIN_USERNAME: ${IAK_ADMIN_USERNAME}
+      IAK_ADMIN_PASSWORD: ${IAK_ADMIN_PASSWORD}
+    ports:
+      - 8080:80
+    links:
+      - iak-kibana
+    networks:
+      - iak-network
+    volumes:
+      - ./logs/iak-rp/:/var/log/nginx/
+      - ./iak-rp/nginx.debug.conf:/etc/nginx/nginx.conf
     restart: unless-stopped
 
 networks:
