@@ -17,7 +17,7 @@ run-prod: check-sysctl ## run istex-kibana with prod parameters
 	docker-compose up -d rp
 
 run-debug: check-sysctl ## run istex-kibana with debug parameters
-	google-chrome http://127.0.0.1:8080/ &
+	google-chrome http://127.0.0.1:8080/app/kibana &
 	docker-compose -f ./docker-compose.debug.yml up
 
 ps: ## show current container status
