@@ -46,7 +46,7 @@ services:
     networks:
       - iak-network      
     volumes:
-      - ./iak-kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
+      - ./iak-kibana/kibana.debug.yml:/usr/share/kibana/config/kibana.yml
     restart: unless-stopped
 
 
