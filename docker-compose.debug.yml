@@ -54,6 +54,7 @@ services:
       - iak-network
     volumes:
       - ./logs/iak-rp/:/var/log/nginx/
+      - ./iak-rp/entrypoint-create-credentials:/bin/entrypoint-create-credentials
       - ./iak-rp/nginx.debug.conf:/etc/nginx/nginx.conf
     restart: unless-stopped
 
