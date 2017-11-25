@@ -20,8 +20,8 @@ services:
     networks:
       - iak-network      
     volumes:
-      - "./data/elastic/data:/usr/share/elasticsearch/data"
-      - "./iak-elastic/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+      - ./data/elastic/data/:/usr/share/elasticsearch/data/
+      - ./iak-elastic/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     restart: unless-stopped
 
 
