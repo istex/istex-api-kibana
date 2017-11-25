@@ -36,11 +36,37 @@ make load-istex-data
 ```
 (laissez la tourner en tache de fond pour charger 1000 documents)
 
-Rendez alors sur http://128.0.0.1:8080//app/kibana et si c'est votre premier lancement, attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent. 
+Rendez alors sur http://128.0.0.1:8080/app/kibana et si c'est votre premier lancement, attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent (cela peut prendre 2 minutes).
 
-Une fois que vous arrivez à afficher Kibana sur votre URL locale http://128.0.0.1:8080/app/kibana vous devez importer manuellement le modèle de tableau de bord Kibana en vous rendant dans ![Management](https://user-images.githubusercontent.com/328244/32851436-3a80c0fa-ca35-11e7-8744-bc7ec552aa0c.png) puis en cliquant sur ![Import](https://user-images.githubusercontent.com/328244/32851531-778dd172-ca35-11e7-8fa7-b7ca0c8bc7d9.png) et finalement en sélectionnant le fichier export.json présent dans le répertoire ``data/kibana/export.json`` :
+## Configurer l'application à son premier lancement
+
+Une fois que vous arrivez à afficher Kibana sur votre URL locale http://128.0.0.1:8080/app/kibana vous avez plusieurs opérations à réaliser manuellement (qui ne seront pas à réaliser au prochain redémarrage).
+
+1) Configurer un "index pattern" au niveau du kibana, il faudra indiquer ``istex-corpus-*`` et ne pas séléctionner de champs pour le "Time filter" cf copie d'écran :
+
+![image](https://user-images.githubusercontent.com/328244/33234970-a257d37e-d22f-11e7-95e6-6b2826956695.png)
+
+2) Vous devez ensuite importer manuellement le modèle de tableau de bord Kibana en vous rendant dans "Management"
+
+![Management](https://user-images.githubusercontent.com/328244/32851436-3a80c0fa-ca35-11e7-8744-bc7ec552aa0c.png) 
+
+
+
+puis en cliquant sur
+
+![Import](https://user-images.githubusercontent.com/328244/32851531-778dd172-ca35-11e7-8fa7-b7ca0c8bc7d9.png) 
+
+
+
+et finalement en sélectionnant le fichier ``export.json`` présent dans le répertoire ``data/kibana/export.json`` :
+
+
+
 ![](https://user-images.githubusercontent.com/328244/32851512-69f484fc-ca35-11e7-91a2-4881022c37fc.png)
-Cette opération est à faire une seule fois après le premier lancement de l'application. Vous aurez besoin du login/mot de passe défini dans les variables ``IAK_ADMIN_USERNAME`` et ``IAK_ADMIN_PASSWORD`` pour réaliser cela.
+
+
+
+Ces deux opérations ne sont à faire qu'une fois après le premier lancement de l'application. Notez également que kibana vous demandera de vous authentifier et vous aurez alors besoin du login/mot de passe défini dans les variables ``IAK_ADMIN_USERNAME`` et ``IAK_ADMIN_PASSWORD``.
 
 ## Chargement des données
 
