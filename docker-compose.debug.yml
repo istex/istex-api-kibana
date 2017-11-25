@@ -1,9 +1,16 @@
 version: '3.4'
 
 services:
+
+  # elasticsearch engine
   iak-elastic:
     container_name: iak-elastic
-    image: docker.elastic.co/elasticsearch/elasticsearch:6.0.0
+    build:
+      context: ./iak-elastic
+      args:
+        - http_proxy
+        - https_proxy
+    image: iak-elastic:1.0.0
     ports:
       - 9200:9200
       - 9300:9300
@@ -14,13 +21,21 @@ services:
       - iak-network      
     volumes:
       - "./data/elastic/data:/usr/share/elasticsearch/data"
-      - "./iak-elastic/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
-      #- "./iak-elastic/config/log4j2.properties:/usr/share/elasticsearch/config/log4j2.properties"
+      - "./iak-elastic/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     restart: unless-stopped
 
+
+
+
+  # kibana web server
   iak-kibana:
     container_name: iak-kibana
-    image: docker.elastic.co/kibana/kibana:6.0.0
+    build:
+      context: ./iak-kibana
+      args:
+        - http_proxy
+        - https_proxy
+    image: iak-kibana:1.0.0
     ports:
       - 5601:5601
     links:
@@ -31,9 +46,13 @@ services:
     networks:
       - iak-network      
     volumes:
-      - ./iak-kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
+      - ./iak-kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
     restart: unless-stopped
 
+
+
+  # enduser entrypoint
+  # (nginx reverse proxy dedicated to admin authentication stuff)
   iak-rp:
     container_name: iak-rp
     build:
@@ -41,7 +60,7 @@ services:
       args:
         - http_proxy
         - https_proxy
-    image: iak-rp
+    image: iak-rp:1.0.0
     environment:
       IAK_BASEURL: ${IAK_BASEURL}
       IAK_ADMIN_USERNAME: ${IAK_ADMIN_USERNAME}

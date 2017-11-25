@@ -20,12 +20,16 @@ run-debug: check-sysctl ## run istex-kibana with debug parameters
 	google-chrome http://127.0.0.1:8080/ &
 	docker-compose -f ./docker-compose.debug.yml up
 
+ps: ## show current container status
+	docker-compose -f ./docker-compose.debug.yml ps
+
 load-istex-data: ## load random istex documents in the elasticsearch
+	./create-index-mapping.sh
 	./load-random-istex-doc.sh
 
-cleanup-data: ## destroy all the elasticsearch data the hard way
+cleanup-all-data: ## destroy all the elasticsearch and kibana data the hard way
 	docker-compose -f ./docker-compose.debug.yml kill
 	rm -rf data/elastic/data/*
 
-change-password: ## modify elastic and kibana default password
-	docker exec -it iak-elastic bin/x-pack/setup-passwords interactive
+cleanup-indexs: ## destroy istex-corpus-* indexes for elasticsearch
+	./delete-index.sh
