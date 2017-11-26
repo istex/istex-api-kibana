@@ -1,0 +1,76 @@
+version: '3.4'
+
+services:
+
+  # elasticsearch engine
+  iak-elastic:
+    container_name: iak-elastic
+    image: istex/istex-api-kibana:1.1.0-elastic
+    environment:
+      CLUSTER_NAME: "istex-api-kibana"
+      ES_JAVA_OPTS: ${IAK_ELASTICSEARCH_JAVA_OPTS}
+      TAKE_FILE_OWNERSHIP: "1" # to be able to write into /usr/share/elasticsearch/data/
+    networks:
+      - iak-network      
+    volumes:
+      - ./data/elastic/data/:/usr/share/elasticsearch/data/
+    restart: unless-stopped
+
+
+
+
+  # kibana web server
+  iak-kibana:
+    container_name: iak-kibana
+    image: istex/istex-api-kibana:1.1.0-kibana
+    links:
+      - iak-elastic
+    environment:
+      CLUSTER_NAME: "istex-api-kibana"
+      ELASTICSEARCH_URL: "http://iak-elastic:9200"
+    networks:
+      - iak-network      
+    restart: unless-stopped
+
+
+
+  # enduser entrypoint
+  # (nginx reverse proxy dedicated to admin authentication stuff)
+  iak-rp:
+    container_name: iak-rp
+    image: istex/istex-api-kibana:1.1.0-rp
+    environment:
+      IAK_BASEURL: ${IAK_BASEURL}
+      IAK_ADMIN_USERNAME: ${IAK_ADMIN_USERNAME}
+      IAK_ADMIN_PASSWORD: ${IAK_ADMIN_PASSWORD}
+    ports:
+      - 8080:80
+    links:
+      - iak-kibana
+    networks:
+      - iak-network
+    volumes:
+      - ./logs/iak-rp/:/var/log/nginx/
+    restart: unless-stopped
+
+
+
+  # this container will ingest data into
+  # iak-elastic comming from the ISTEX API
+  iak-loader:
+    container_name: iak-loader
+    image: istex/istex-api-kibana:1.1.0-loader
+    environment:
+      ELASTICSEARCH_URL: "http://iak-elastic:9200"
+      IAK_ISTEX_API_URL: ${IAK_ISTEX_API_URL}
+      IAK_LOAD_10_DOC: ${IAK_LOAD_10_DOC} # load 10 doc at startup
+    links:
+      - iak-elastic
+    networks:
+      - iak-network
+    restart: unless-stopped
+
+
+networks:
+  iak-network:
+    driver: bridge
