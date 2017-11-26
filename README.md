@@ -36,11 +36,11 @@ make load-istex-data
 ```
 (laissez la tourner en tache de fond pour charger 1000 documents)
 
-Rendez alors sur http://128.0.0.1:8080/app/kibana et si c'est votre premier lancement, attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent (cela peut prendre 2 minutes).
+Rendez alors sur http://127.0.0.1:8080/app/kibana et si c'est votre premier lancement, attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent (cela peut prendre 2 minutes).
 
 ## Configurer l'application à son premier lancement
 
-Une fois que vous arrivez à afficher Kibana sur votre URL locale http://128.0.0.1:8080/app/kibana vous avez plusieurs opérations à réaliser manuellement (qui ne seront pas à réaliser au prochain redémarrage).
+Une fois que vous arrivez à afficher Kibana sur votre URL locale http://127.0.0.1:8080/app/kibana vous avez plusieurs opérations à réaliser manuellement (qui ne seront pas à réaliser au prochain redémarrage).
 
 1) Configurer un "index pattern" au niveau du kibana, il faudra indiquer ``istex-corpus-*`` et ne pas séléctionner de champs pour le "Time filter". Cf copie d'écran :
 
