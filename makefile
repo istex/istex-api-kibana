@@ -31,5 +31,5 @@ cleanup-all-data: ## destroy all the elasticsearch and kibana data the hard way
 	docker-compose -f ./docker-compose.debug.yml kill
 	rm -rf data/elastic/data/*
 
-cleanup-indexs: ## destroy istex-corpus-* indexes for elasticsearch
-	./delete-index.sh
+cleanup-indexes: ## destroy istex-corpus-* indexes for elasticsearch
+	curl -XDELETE 'localhost:9200/istex-corpus-*?pretty' -H 'Content-Type: application/json'
