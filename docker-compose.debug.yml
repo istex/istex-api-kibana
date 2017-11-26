@@ -93,7 +93,7 @@ services:
     environment:
       ELASTICSEARCH_URL: "http://iak-elastic:9200"
       IAK_ISTEX_API_URL: ${IAK_ISTEX_API_URL}
-      IAK_LOAD_10_DOC: "yes" # load 10 doc at startup
+      IAK_LOAD_10_DOC: ${IAK_LOAD_10_DOC} # load 10 doc at startup
     links:
       - iak-elastic
     networks:
