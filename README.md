@@ -38,6 +38,33 @@ make load-istex-data
 
 Rendez alors sur http://127.0.0.1:8080/app/kibana et si c'est votre premier lancement, attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent (cela peut prendre 2 minutes).
 
+## Lancer l'application en production
+
+```shell
+# lancement de l'application (changez les variables nécessaires 
+# comme par exemple le mot de passe)
+mkdir istex-api-kibana/ && cd istex-api-kibana/
+wget https://raw.githubusercontent.com/istex/istex-api-kibana/master/docker-compose.yml
+mkdir -p logs/iak-rp/
+mkdir -p data/elastic/data/
+IAK_ADMIN_USERNAME="istex-api-kibana" \
+IAK_ADMIN_PASSWORD="changeme" \
+IAK_BASEURL="https://api-kibana.istex.fr" \
+IAK_ELASTICSEARCH_JAVA_OPTS="-Xmx10G -Xms10G" \
+IAK_ISTEX_API_URL="https://api.istex.fr" \
+IAK_LOAD_10_DOC="no" \
+docker-compose up -d
+
+# chargement des données dans la base elasticsearch
+docker exec -it iak-loader load-random-istex-doc-bulk.sh
+```
+
+
+
+Rendez alors sur ``http://<nom-du-serveur>:8080/`` ou sur https://api-kibana.istex.fr (nécessite la configuration préalable du reverse proxy), et attendez un petit moment  pour qu'elasticsearch et kibana s'initialisent (cela peut prendre 2 minutes), vous aurez alors le Kibana qui s'affichera. Suivez les instructions de la section suite au premier démarrage.
+
+En cas de souci au démarrage, ``docker-compose logs`` pourra vous aiguiller.
+
 ## Configurer l'application à son premier lancement
 
 Une fois que vous arrivez à afficher Kibana sur votre URL locale http://127.0.0.1:8080/app/kibana vous avez plusieurs opérations à réaliser manuellement (qui ne seront pas à réaliser au prochain redémarrage).
@@ -73,10 +100,10 @@ Ces deux opérations ne sont à faire qu'une fois après le premier lancement de
 Vous pouvez à tout moment charger de nouvelles données dans votre Kibana en lançant cette commande dans un autre terminal une fois que l'application est lancée.
 
 ```shell
-make load-istex-data
+docker exec -it iak-loader load-random-istex-doc-bulk.sh
 ```
 
-Cette commande va charger 1000 métadonnées de documents aléatoirement trouvées sur l'API ISTEX dans L'ElasticSearch de istex-api-kibana.
+Cette commande va charger des documents aléatoirement trouvées sur l'API ISTEX dans L'ElasticSearch de istex-api-kibana.
 
 ## Comment sauvegarder un nouveau tableau de bord
 
