@@ -78,6 +78,34 @@ services:
       - ./iak-rp/nginx.debug.conf:/etc/nginx/nginx.conf
     restart: unless-stopped
 
+
+
+  # this container will ingest data into
+  # iak-elastic comming from the ISTEX API
+  iak-loader:
+    container_name: iak-loader
+    build:
+      context: ./iak-loader
+      args:
+        - http_proxy
+        - https_proxy
+    image: istex/istex-api-kibana:1.0.3-loader
+    environment:
+      ELASTICSEARCH_URL: "http://iak-elastic:9200"
+      IAK_ISTEX_API_URL: ${IAK_ISTEX_API_URL}
+      IAK_LOAD_10_DOC: "yes" # load 10 doc at startup
+    links:
+      - iak-elastic
+    networks:
+      - iak-network
+    volumes:
+      - ./iak-loader/create-index-mapping.sh:/bin/create-index-mapping.sh
+      - ./iak-loader/load-random-istex-doc.sh:/bin/load-random-istex-doc.sh
+      - ./iak-loader/load-random-istex-doc-bulk.sh:/bin/load-random-istex-doc-bulk.sh
+      - ./iak-loader/docker-entrypoint.sh:/bin/docker-entrypoint.sh
+    restart: unless-stopped
+
+
 networks:
   iak-network:
     driver: bridge
