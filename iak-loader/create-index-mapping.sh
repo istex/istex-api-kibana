@@ -34,5 +34,5 @@ do
   ' | curl -s -H 'Content-Type: application/json' \
            -XPUT "$ELASTICSEARCH_URL/istex-corpus-${CORPUS}?pretty" \
            -d @- \
-    | jq -r '"Mapping créé pour cet index: \(.index)"'
+    | jq -r '"Mapping created for this index: \(.index)"'
 done
