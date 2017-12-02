@@ -55,7 +55,7 @@ IAK_ISTEX_API_URL="https://api.istex.fr" \
 IAK_LOAD_10_DOC="no" \
 docker-compose up -d
 
-# chargement des données dans la base elasticsearch
+# chargement des données ISTEX dans la base elasticsearch
 docker exec -it iak-loader load-random-istex-doc-bulk.sh
 ```
 
