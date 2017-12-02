@@ -24,8 +24,7 @@ ps: ## show current container status
 	docker-compose -f ./docker-compose.debug.yml ps
 
 load-istex-data: ## load random istex documents in the elasticsearch
-	./create-index-mapping.sh
-	./load-random-istex-doc.sh
+	docker exec -it iak-loader load-random-istex-doc-bulk.sh
 
 cleanup-all-data: ## destroy all the elasticsearch and kibana data the hard way
 	docker-compose -f ./docker-compose.debug.yml kill
