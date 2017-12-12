@@ -6,13 +6,36 @@
       "title": "Les données de la plateforme ISTEX",
       "hits": 0,
       "description": "Ces graphiques illustrent visuellement les contenus hébergés au sein de la plateforme ISTEX. Ces données font l'objet de négociations auprès des éditeurs scientifiques, d'un travail de normalisation, d'enrichissement et enfin de chargement dans la plateforme ISTEX.",
-      "panelsJSON": "[{\"col\":1,\"id\":\"341920d0-c978-11e7-ba50-61476f8e9e33\",\"panelIndex\":1,\"row\":23,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"94ac2e60-c978-11e7-ba50-61476f8e9e33\",\"panelIndex\":2,\"row\":23,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"8d115a80-c979-11e7-ba50-61476f8e9e33\",\"panelIndex\":3,\"row\":26,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"139367b0-c97a-11e7-ba50-61476f8e9e33\",\"panelIndex\":4,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"a3feb020-c97a-11e7-af34-6748d751dc5d\",\"panelIndex\":5,\"row\":35,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"aa4c3190-c97b-11e7-af34-6748d751dc5d\",\"panelIndex\":6,\"row\":32,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"bc66d400-c97d-11e7-9f79-1dfc55f4c203\",\"panelIndex\":7,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"10592770-c97e-11e7-9f79-1dfc55f4c203\",\"panelIndex\":8,\"row\":20,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b9564330-c97e-11e7-9f79-1dfc55f4c203\",\"panelIndex\":9,\"row\":20,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"0c020ce0-c97f-11e7-9f79-1dfc55f4c203\",\"panelIndex\":10,\"row\":8,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4b8c9230-c980-11e7-9f79-1dfc55f4c203\",\"panelIndex\":11,\"row\":17,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"77f65a40-c980-11e7-9f79-1dfc55f4c203\",\"panelIndex\":12,\"row\":17,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"75b6ed50-ca4b-11e7-8646-a9eec67c7e8f\",\"panelIndex\":14,\"row\":5,\"size_x\":7,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"521ad700-ca4e-11e7-91b4-f92a901e904f\",\"panelIndex\":15,\"row\":29,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"c316ca40-ca4e-11e7-91b4-f92a901e904f\",\"panelIndex\":16,\"row\":29,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b095c3e0-ca57-11e7-91b4-f92a901e904f\",\"panelIndex\":18,\"row\":32,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a5124eb0-ca59-11e7-b58b-a773adbc3af4\",\"panelIndex\":19,\"row\":14,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b4fc7200-ca5a-11e7-b58b-a773adbc3af4\",\"panelIndex\":20,\"row\":14,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e4611eb0-ce38-11e7-8b56-e39590f644c5\",\"panelIndex\":21,\"row\":35,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4e88c160-ce45-11e7-8b56-e39590f644c5\",\"panelIndex\":23,\"row\":11,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"777d4410-d6f1-11e7-b504-7d26d62665d6\",\"panelIndex\":24,\"row\":1,\"size_x\":7,\"size_y\":4,\"type\":\"visualization\"}]",
+      "panelsJSON": "[{\"col\":1,\"id\":\"341920d0-c978-11e7-ba50-61476f8e9e33\",\"panelIndex\":1,\"row\":23,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"94ac2e60-c978-11e7-ba50-61476f8e9e33\",\"panelIndex\":2,\"row\":23,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"8d115a80-c979-11e7-ba50-61476f8e9e33\",\"panelIndex\":3,\"row\":26,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"139367b0-c97a-11e7-ba50-61476f8e9e33\",\"panelIndex\":4,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"a3feb020-c97a-11e7-af34-6748d751dc5d\",\"panelIndex\":5,\"row\":35,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"aa4c3190-c97b-11e7-af34-6748d751dc5d\",\"panelIndex\":6,\"row\":32,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"bc66d400-c97d-11e7-9f79-1dfc55f4c203\",\"panelIndex\":7,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"10592770-c97e-11e7-9f79-1dfc55f4c203\",\"panelIndex\":8,\"row\":20,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b9564330-c97e-11e7-9f79-1dfc55f4c203\",\"panelIndex\":9,\"row\":20,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"0c020ce0-c97f-11e7-9f79-1dfc55f4c203\",\"panelIndex\":10,\"row\":8,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4b8c9230-c980-11e7-9f79-1dfc55f4c203\",\"panelIndex\":11,\"row\":17,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"77f65a40-c980-11e7-9f79-1dfc55f4c203\",\"panelIndex\":12,\"row\":17,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"75b6ed50-ca4b-11e7-8646-a9eec67c7e8f\",\"panelIndex\":14,\"row\":5,\"size_x\":7,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"521ad700-ca4e-11e7-91b4-f92a901e904f\",\"panelIndex\":15,\"row\":29,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"c316ca40-ca4e-11e7-91b4-f92a901e904f\",\"panelIndex\":16,\"row\":29,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b095c3e0-ca57-11e7-91b4-f92a901e904f\",\"panelIndex\":18,\"row\":32,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a5124eb0-ca59-11e7-b58b-a773adbc3af4\",\"panelIndex\":19,\"row\":14,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b4fc7200-ca5a-11e7-b58b-a773adbc3af4\",\"panelIndex\":20,\"row\":14,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e4611eb0-ce38-11e7-8b56-e39590f644c5\",\"panelIndex\":21,\"row\":35,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4e88c160-ce45-11e7-8b56-e39590f644c5\",\"panelIndex\":23,\"row\":11,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"777d4410-d6f1-11e7-b504-7d26d62665d6\",\"panelIndex\":24,\"row\":1,\"size_x\":7,\"size_y\":4,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":9,\"panelIndex\":25,\"type\":\"search\",\"id\":\"d4eba190-db9d-11e7-bd27-b99af9d0a221\",\"col\":1,\"row\":38,\"columns\":[\"_source\"],\"sort\":[\"_score\",\"desc\"]}]",
       "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 7,500\":\"rgb(247,252,245)\",\"7,500 - 15,000\":\"rgb(199,233,192)\",\"15,000 - 22,500\":\"rgb(116,196,118)\",\"22,500 - 30,000\":\"rgb(35,139,69)\"}}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"legendOpen\":true}}}",
+      "uiStateJSON": "{\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 16,250\":\"rgb(247,252,245)\",\"16,250 - 32,500\":\"rgb(199,233,192)\",\"32,500 - 48,750\":\"rgb(116,196,118)\",\"48,750 - 65,000\":\"rgb(35,139,69)\"}}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"legendOpen\":true}}}",
       "version": 1,
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d4eba190-db9d-11e7-bd27-b99af9d0a221",
+    "_type": "search",
+    "_source": {
+      "title": "Métadonnées des documents ISTEX",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -42,23 +65,6 @@
     "_source": {
       "title": "Nb publications par auteurs",
       "visState": "{\"title\":\"Nb publications par auteurs\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author.name.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "4e88c160-ce45-11e7-8b56-e39590f644c5",
-    "_type": "visualization",
-    "_source": {
-      "title": "Répartition des documents par date de publications",
-      "visState": "{\"title\":\"Répartition des documents par date de publications\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"publicationDate\",\"interval\":\"custom\",\"customInterval\":\"5y\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Années de publication\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"corpusName.keyword\",\"size\":40,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
@@ -132,23 +138,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "139367b0-c97a-11e7-ba50-61476f8e9e33",
-    "_type": "visualization",
-    "_source": {
-      "title": "La plateforme ISTEX en quelques chiffres",
-      "visState": "{\"title\":\"La plateforme ISTEX en quelques chiffres\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Metric\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"fontSize\":45,\"labelColor\":false,\"subText\":\"\"},\"type\":\"simple\",\"useRange\":false,\"verticalSplit\":false},\"handleNoResults\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"corpusName.keyword\",\"customLabel\":\"Corpus\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"id.keyword\",\"customLabel\":\"Documents\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"host.title.keyword\",\"customLabel\":\"Revues\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"host.isbn.keyword\",\"customLabel\":\"Ebooks\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -404,6 +393,40 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4e88c160-ce45-11e7-8b56-e39590f644c5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Répartition des documents par date de publications",
+      "visState": "{\"title\":\"Répartition des documents par date de publications\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Nb documents\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Nb documents\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Nb documents\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"publicationDate\",\"interval\":\"custom\",\"customInterval\":\"5y\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Années de publication\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"corpusName.keyword\",\"size\":40,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Corpus\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "139367b0-c97a-11e7-ba50-61476f8e9e33",
+    "_type": "visualization",
+    "_source": {
+      "title": "La plateforme ISTEX en quelques chiffres",
+      "visState": "{\"title\":\"La plateforme ISTEX en quelques chiffres\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Metric\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"fontSize\":45,\"labelColor\":false,\"subText\":\"\"},\"type\":\"simple\",\"useRange\":false,\"verticalSplit\":false},\"handleNoResults\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"corpusName.keyword\",\"customLabel\":\"Corpus\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"id.keyword\",\"customLabel\":\"Documents\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"host.issn.keyword\",\"customLabel\":\"Revues\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"host.isbn.keyword\",\"customLabel\":\"Ebooks\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"12458440-d228-11e7-b772-1f4c228589c6\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
