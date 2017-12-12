@@ -2,7 +2,7 @@
 
 DEBUG="1"
 NB_CHUNK=1500
-CHUNK_SIZE=50
+CHUNK_SIZE=500
 NB_DOCS_TO_LOAD=$(($NB_CHUNK*$CHUNK_SIZE))
 echo "Starting bulk loading $NB_DOCS_TO_LOAD document from $IAK_ISTEX_API_URL [$(date)]"
 

@@ -20,6 +20,11 @@ run-debug: check-sysctl ## run istex-kibana with debug parameters
 	google-chrome http://127.0.0.1:8080/app/kibana &
 	docker-compose -f ./docker-compose.debug.yml up
 
+kill: ## stop running containers (the hard way)
+	docker-compose -f ./docker-compose.debug.yml kill
+stop: ## stop running containers
+	docker-compose -f ./docker-compose.debug.yml stop
+
 ps: ## show current container status
 	docker-compose -f ./docker-compose.debug.yml ps
 
