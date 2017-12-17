@@ -23,7 +23,6 @@ services:
     volumes:
       - ./data/elastic/data/:/usr/share/elasticsearch/data/
       - ./iak-elastic/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-    restart: unless-stopped
 
 
 
@@ -48,7 +47,6 @@ services:
       - iak-network      
     volumes:
       - ./iak-kibana/kibana.debug.yml:/usr/share/kibana/config/kibana.yml
-    restart: unless-stopped
 
 
 
@@ -76,7 +74,6 @@ services:
       - ./logs/iak-rp/:/var/log/nginx/
       - ./iak-rp/entrypoint-create-credentials:/bin/entrypoint-create-credentials
       - ./iak-rp/nginx.debug.conf:/etc/nginx/nginx.conf
-    restart: unless-stopped
 
 
 
@@ -103,7 +100,6 @@ services:
       - ./iak-loader/load-random-istex-doc.sh:/bin/load-random-istex-doc.sh
       - ./iak-loader/load-random-istex-doc-bulk.sh:/bin/load-random-istex-doc-bulk.sh
       - ./iak-loader/docker-entrypoint.sh:/bin/docker-entrypoint.sh
-    restart: unless-stopped
 
 
 networks:
