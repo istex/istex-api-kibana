@@ -52,7 +52,7 @@ IAK_ADMIN_PASSWORD="changeme" \
 IAK_BASEURL="https://api-kibana.istex.fr" \
 IAK_ELASTICSEARCH_JAVA_OPTS="-Xmx10G -Xms10G" \
 IAK_ISTEX_API_URL="https://api.istex.fr" \
-IAK_LOAD_10_DOC="no" \
+IAK_LOAD_10_DOC="yes" \
 docker-compose up -d
 
 # chargement des données ISTEX dans la base elasticsearch
