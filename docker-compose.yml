@@ -5,7 +5,7 @@ services:
   # elasticsearch engine
   iak-elastic:
     container_name: iak-elastic
-    image: istex/istex-api-kibana:1.2.1-elastic
+    image: istex/istex-api-kibana:1.2.2-elastic
     environment:
       CLUSTER_NAME: "istex-api-kibana"
       ES_JAVA_OPTS: ${IAK_ELASTICSEARCH_JAVA_OPTS}
@@ -22,7 +22,7 @@ services:
   # kibana web server
   iak-kibana:
     container_name: iak-kibana
-    image: istex/istex-api-kibana:1.2.1-kibana
+    image: istex/istex-api-kibana:1.2.2-kibana
     links:
       - iak-elastic
     environment:
@@ -38,7 +38,7 @@ services:
   # (nginx reverse proxy dedicated to admin authentication stuff)
   iak-rp:
     container_name: iak-rp
-    image: istex/istex-api-kibana:1.2.1-rp
+    image: istex/istex-api-kibana:1.2.2-rp
     environment:
       IAK_BASEURL: ${IAK_BASEURL}
       IAK_ADMIN_USERNAME: ${IAK_ADMIN_USERNAME}
@@ -59,7 +59,7 @@ services:
   # iak-elastic comming from the ISTEX API
   iak-loader:
     container_name: iak-loader
-    image: istex/istex-api-kibana:1.2.1-loader
+    image: istex/istex-api-kibana:1.2.2-loader
     environment:
       ELASTICSEARCH_URL: "http://iak-elastic:9200"
       IAK_ISTEX_API_URL: ${IAK_ISTEX_API_URL}
