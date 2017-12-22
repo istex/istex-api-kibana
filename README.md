@@ -43,6 +43,8 @@ Rendez alors sur http://127.0.0.1:8080/app/kibana et si c'est votre premier lanc
 ```shell
 # lancement de l'application (changez les variables nécessaires 
 # comme par exemple le mot de passe)
+# Notice: parameter "-Xmx10G -Xms10G" should not be set to more than 50% of available RAM
+#         see https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html
 mkdir istex-api-kibana/ && cd istex-api-kibana/
 wget https://raw.githubusercontent.com/istex/istex-api-kibana/master/docker-compose.yml
 mkdir -p logs/iak-rp/
