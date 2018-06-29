@@ -4,7 +4,7 @@
 
 Dashboard kibana des données disponibles en production sur la [plateforme ISTEX](http://www.istex.fr).
 
-https://api-kibana.istex.fr (prochainement disponible)
+Résultat visible en production ici : https://api-kibana.istex.fr
 
 Pour :
 - proposer une vitrine orientée données aux utilisateurs finaux,
